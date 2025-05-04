@@ -1,0 +1,44 @@
+name: saver_favor
+description: "SaverFavor WebView App"
+publish_to: 'none'
+version: 2.0.2
+
+environment:
+  # Ensure you’re on Dart 3 (Flutter 3.x+)
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # In-app WebView
+  flutter_inappwebview: ^6.1.5
+
+  # MVVM state management
+  provider: ^6.1.4
+
+  # (Optional) check connectivity status
+  connectivity_plus: ^6.1.4
+  sqflite: ^2.4.2
+  path: ^1.9.1
+  path_provider: ^2.1.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.3
+
+flutter:
+  uses-material-design: true
+
+  # Add your splash/logo asset
+  assets:
+    - assets/logo.png
+    - assets/splash/sfl_splash.gif
+    - assets/icon/sfl_apps_icon.png
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/sfl_apps_icon.png"
